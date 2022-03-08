@@ -4,12 +4,12 @@
   --main-green: #2f5d62;
   --main-blue: #45567d;
   --main-gray: #303841;
-    /*variables to use */
+  /*variables to use */
   /* border radius*/
-  --radius: 0.2rem
+  --radius: 0.2rem;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -53,13 +53,13 @@ div.main-body {
   display: flex;
   box-shadow: 0px 0px 10px var(--main-light-green);
   border-radius: var(--radius);
-  justify-content:flex-end;
+  justify-content: flex-end;
   align-items: center;
 }
 
-.nav-item{
-  list-style:none;
-  margin-right:2rem;
+.nav-item {
+  list-style: none;
+  margin-right: 2rem;
 }
 
 .nav-item a {
@@ -69,27 +69,27 @@ div.main-body {
 
 .nav-item a:hover {
   color: var(--main-green);
-  transition:all 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 
-.nav-item:first-child{
+.nav-item:first-child {
   margin-right: auto;
-  margin-left:2rem;
+  margin-left: 2rem;
   padding: 0.5rem;
 }
 
-.btn-primary{
+.btn-primary {
   font-size: 1rem;
   background: var(--main-green);
-  border:none;
-  outline:none;
+  border: none;
+  outline: none;
   border-radius: var(--radius);
   padding: 0.5rem 1rem;
-  cursor:pointer;
-  transition:all 200ms ease-in;
+  cursor: pointer;
+  transition: all 200ms ease-in;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
   background: var(--main-light-green);
 }
 
@@ -114,9 +114,9 @@ div.main-body {
 
 /* -------------- projects ------------------- */
 
-#projects{
-  background: black;
-  color: white;
+#projects {
+  background: whitesmoke;
+  color: black;
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -125,7 +125,9 @@ div.main-body {
   width: 100%;
 }
 
-#links{
+/* -------------- links ------------------- */
+
+#links {
   background: gray;
   color: white;
   height: 250px;
@@ -135,10 +137,6 @@ div.main-body {
   align-items: center;
   width: 100%;
 }
-
-
-/* -------------- links ------------------- */
-
 
 /* -------------- media queries ------------------- */
 
