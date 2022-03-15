@@ -4,6 +4,7 @@
   --main-green: #2f5d62;
   --main-blue: #45567d;
   --main-gray: #303841;
+  --green_other: #41afa141;
   /*variables to use */
   /* border radius*/
   --radius: 0.2rem;
@@ -11,6 +12,9 @@
 
 html {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-light-green);
 }
 
 /* Base reset */
@@ -31,6 +35,11 @@ body {
   padding: 0;
   top: 0;
   left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 div.main-body {
@@ -81,16 +90,18 @@ div.main-body {
 .btn-primary {
   font-size: 1rem;
   background: var(--main-green);
+  color: whitesmoke;
   border: none;
   outline: none;
   border-radius: var(--radius);
   padding: 0.5rem 1rem;
   cursor: pointer;
   transition: all 200ms ease-in;
+  text-decoration: none;
 }
 
 .btn-primary:hover {
-  background: var(--main-light-green);
+  background: var(--main-blue);
 }
 
 /* -------------- welcome-section ------------------- */
@@ -110,32 +121,117 @@ div.main-body {
   text-align: center;
   font-size: 5em;
   font-weight: 200;
+  margin: 15px;
 }
 
-/* -------------- projects ------------------- */
+#welcome-section > h3,
+h4 {
+  margin: 5px;
+  font-size: 1em;
+  font-weight: 100;
+}
+
+/* -------------- Projects section ------------------- */
 
 #projects {
-  background: whitesmoke;
+  background-color: var(--main-light-green);
+  margin: 0;
+  padding: 0;
+}
+
+#projects h2 {
+  padding: 50px 100px 15px 100px;
+  color: var(--main-green);
+  text-align: center;
+  font-size: xx-large;
+}
+
+.txt-project-section,
+p {
   color: black;
-  height: 250px;
+  font-size: large;
+  margin: 25px 100px 25px 100px;
+  padding: 15px 100px 15px 100px;
+  background-color: var(--green_other);
+  border-radius: 5px;
+  text-align: center;
+}
+
+#project_card_container {
+  background-color: var(--main-light-green);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  max-width: 400px;
+  height: auto;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(110%);
+}
+
+.project-image {
+  padding: 0;
+  margin: 20px;
+  border-radius: 5px;
+  border: var(--main-green);
+  border-style: ridge;
+  border-width: 5px;
+}
+
+.card-container {
+  margin: 5px;
+  padding: 2px 16px;
+  display: flex;
+  flex-direction: column;
+  color: var(--main-gray);
   align-items: center;
-  width: 100%;
+}
+
+.card-container h4 {
+  margin: 3px;
+  font-weight: 100;
+  color: var(--main-green);
+  text-align: center;
+  font-size: x-large;
+}
+
+.card-container p {
+  padding: 5px;
+  margin: 5px;
+}
+
+.card-container button {
+  margin: 10px 0 10px 0px;
+  max-width: 150px;
+  align-items: center;
 }
 
 /* -------------- links ------------------- */
 
 #links {
-  background: gray;
-  color: white;
-  height: 250px;
-  display: flex;
+  background: var(--main-gray);
+  color: whitesmoke;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin: 0;
+  padding: 350px 150px;
 }
 
 /* -------------- media queries ------------------- */
